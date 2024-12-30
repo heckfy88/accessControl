@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "sf";
+option java_outer_classname = "Accesscontrol";
+option objc_class_prefix = "HLW";
+
+package sf;
+
+service AccesscontrolService {
+  rpc send (AccesscontrolRequest) returns (AccesscontrolReply) {}
+}
+
+message AccesscontrolRequest {
+  string name = 1;
+}
+
+message AccesscontrolReply {
+  string message = 1;
+}
