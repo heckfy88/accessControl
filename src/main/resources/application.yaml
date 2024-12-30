@@ -1,0 +1,8 @@
+micronaut:
+  application:
+    name: accesscontrol
+
+grpc:
+  server:
+    host: accesscontrol
+    port: 9090

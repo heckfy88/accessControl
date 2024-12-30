@@ -4,10 +4,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the application JAR file to the container
-COPY target/productservice-0.1.jar app.jar
-
-# Expose the service port
-EXPOSE 9091
+COPY target/accesscontrol-0.1.jar app.jar
 
 # Run the application
 CMD ["java", "-jar", "app.jar"]
